@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_iomt_box_user,iomt.box,iomt.model_iomt_box,base.group_user,1,0,0,0
+access_iomt_device_user,iomt.device,iomt.model_iomt_device,base.group_user,1,0,0,0
+access_iomt_box_admin,iomt.box,iomt.model_iomt_box,base.group_system,1,1,0,1
+access_iomt_device_admin,iomt.device,iomt.model_iomt_device,base.group_system,1,1,0,1
+access_iomt_keyboard_layout,iomt.keyboard.layout,iomt.model_iomt_keyboard_layout,base.group_system,1,1,0,1
+access_add_iomt_box,access.add.iomt.box,model_add_iomt_box,base.group_system,1,1,1,0
