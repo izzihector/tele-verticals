@@ -1,0 +1,49 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="logout-icon" clip-path="url(#clip0_2_1102)">
+<g id="surface15851651">
+<path id="Vector" d="M12.332 1.33203H3.66797C3.29688 1.33203 3 1.63281 3 2V14C3 14.3672 3.29688 14.668 3.66797 14.668H12.332C12.7031 14.668 13 14.3672 13 14V2C13 1.63281 12.7031 1.33203 12.332 1.33203Z" fill="url(#paint0_linear_2_1102)"/>
+<g id="Mask group">
+<mask id="mask0_2_1102" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector_2" d="M16 0H0V16H16V0Z" fill="black" fill-opacity="0.05"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_2_1102)">
+<rect id="Rectangle" width="16" height="16" fill="url(#pattern0)"/>
+</g>
+</g>
+<g id="Mask group_2">
+<mask id="mask1_2_1102" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<g id="Group_3">
+<g id="Group_4">
+<path id="Vector_3" d="M16 0H0V16H16V0Z" fill="black" fill-opacity="0.07"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask1_2_1102)">
+<rect id="Rectangle_2" width="16" height="16" fill="url(#pattern1)"/>
+</g>
+</g>
+<path id="Vector_4" d="M11.668 5.60156V7H7.33203C7.14844 7 7 7.14844 7 7.33203V8.66797C7 8.85156 7.14844 9 7.33203 9H11.668V10.3984C11.668 10.6367 11.957 10.7578 12.125 10.5859L14.3594 8.35156C14.5547 8.15625 14.5547 7.83984 14.3594 7.64453L12.125 5.41406C11.957 5.24219 11.668 5.36328 11.668 5.60156Z" fill="#50E6FF"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2_1102" transform="scale(0.0625)"/>
+</pattern>
+<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_2_1102" transform="scale(0.0625)"/>
+</pattern>
+<linearGradient id="paint0_linear_2_1102" x1="3.39433" y1="1.62633" x2="12.2857" y2="13.9307" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2AA4F4"/>
+<stop offset="1" stop-color="#007AD9"/>
+</linearGradient>
+<clipPath id="clip0_2_1102">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+<image id="image0_2_1102" data-name="image15851655.png" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAASklEQVQ4jWNgGAWkggAGBgZBSgz4y8DAcA5ZgIWAbVFoYkwMDAyGxNq2ioGB4T8OjGIiRQCfF5ZhEQul1EKMQCQV+DNQGI3DEQAAcEQM3igBQG4AAAAASUVORK5CYII="/>
+<image id="image1_2_1102" data-name="image15851658.png" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAASklEQVQ4jWNgGAWkAmZKDVjIwMDQhSzAiEcxLwMDgxsDAwMTklgRAwODBQF9cBDMwMDwHweGAyZMfaQBmnoBG8AIRFIBxV4ejgAACqkKrYeVfywAAAAASUVORK5CYII="/>
+</defs>
+</svg>

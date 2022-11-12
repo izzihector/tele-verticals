@@ -1,0 +1,38 @@
+// ===========   Colours      ===========
+$o-tele-studio-color-danger: #ffce65;
+$o-tele-studio-color-warning: #f9dd06;
+$o-tele-studio-color-success: #40ad67;
+$o-tele-studio-color-info: #6996a8;
+
+$o-tele-studio-bg-lighter: #f2f2f2;
+$o-tele-studio-bg-light: #eaeaea;
+$o-tele-studio-bg-medium: #3a3f46;
+$o-tele-studio-bg-dark: #262c34;
+$o-tele-studio-bg-darker: darken($o-tele-studio-bg-dark, 2%);
+
+$o-tele-studio-text-light: $o-tele-studio-bg-light;
+$o-tele-studio-text-inactive: darken($o-tele-studio-text-light, 20%);
+$o-tele-studio-text-disabled: gray;
+$o-tele-studio-text-dark: #15161a;
+
+// ===========   Fonts      ===========
+$o-tele-studio-font-family-monospace: Monaco, Menlo, "Ubuntu Mono", Consolas, source-code-pro,
+  monospace;
+
+// ===========   Shadows     ===========
+$o-tele-studio-shadow-base: 0 0px 26px -12px;
+$o-tele-studio-shadow-active: 0 10px 26px -12px;
+
+// ===========   Fonts      ===========
+$o-tele-studio-font-family-monospace: Monaco, Menlo, "Ubuntu Mono", Consolas, source-code-pro,
+  monospace;
+
+// ===========   Layout      ===========
+$o-tele-studio-sidebar-width: 300px;
+$o-tele-studio-report-sidebar-width: 350px;
+$o-tele-studio-sidebar-margin: $grid-gutter-width * 0.5;
+$o-tele-studio-view-type-width: 115px;
+$o-tele-studio-menu-height: $o-navbar-height;
+
+// ===========   Menu      ===========
+$o-tele-studio-menu-item-border-width: 3px;

@@ -1,0 +1,46 @@
+version: '2'
+services:
+  web:
+    image: telehub/tele:1.0
+    depends_on:
+      - db
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./applets:/mnt/extra-applets
+      - ./config:/etc/tele
+  db:
+    image: postgres:14
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=tele
+      - POSTGRES_USER=tele
+#  nginx:
+#    build:
+#      context: ./nginx
+#      dockerfile: Dockerfile
+#      args:
+#        TELE_CERT_NAME: "module.tele.studio"
+#   command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+#    ports:
+#      - "80:80"
+#      - "443:443"
+#    restart: always
+#    volumes:
+#      -  sslvolume:/etc/ssl
+#      - ./data/certbot/conf:/etc/letsencrypt/
+#      - ./data/certbot/www:/var/www/certbot
+#    environment:
+#      TELE_SERVER_NAME: "web"
+#      TELE_DOMAIN: "module.tele.studio"
+#      TELE_LOCAL_PORT: "8089"
+#  certbot:
+#    image: certbot/certbot
+#    volumes:
+#      - ./data/certbot/conf:/etc/letsencrypt
+#      - ./data/certbot/www:/var/www/certbot
+#    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+#
+#volumes:
+#  sslvolume:
+    #external: true

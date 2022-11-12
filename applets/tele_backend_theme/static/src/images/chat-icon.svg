@@ -1,0 +1,11 @@
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="chat-icon">
+<path id="Vector" d="M9.42857 0C4.69457 0 0.857146 3.81565 0.857146 8.52278C0.857146 10.0726 1.27972 11.5215 2.00657 12.7735L0.050575 17.1985C-0.166282 17.689 0.35529 18.1787 0.83529 17.9358L5.01557 15.8191C6.306 16.5926 7.81243 17.0456 9.42857 17.0456C14.1626 17.0456 18 13.2299 18 8.52278C18 3.81565 14.1626 0 9.42857 0Z" fill="url(#paint0_linear_1_3364)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_3364" x1="13.8009" y1="1.19063" x2="3.49403" y2="18.6729" gradientUnits="userSpaceOnUse">
+<stop stop-color="#33BEF0"/>
+<stop offset="1" stop-color="#0A85D9"/>
+</linearGradient>
+</defs>
+</svg>

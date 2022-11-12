@@ -1,0 +1,175 @@
+@mixin o-tele-studio-checkbox(
+  $label-color: $o-tele-studio-text-inactive,
+  $label-color-active: $o-tele-studio-text-light,
+  $label-color-hover: $o-tele-studio-text-light,
+  $unchecked-color: $o-tele-studio-bg-dark,
+  $unchecked-border: $o-tele-studio-bg-dark
+) {
+  label {
+    cursor: pointer;
+    font-size: 12px;
+    color: $label-color;
+
+    &:active {
+      color: $label-color-active;
+    }
+    &:hover {
+      color: $label-color-hover;
+    }
+  }
+  .custom-checkbox {
+    > input {
+      &:not(:checked) + label:before {
+        border: 1px solid $unchecked-border;
+      }
+      &:checked + label:after {
+        background-image: url("/tele_studio/static/src/img/ui/checkbox_active.svg");
+        background-size: cover;
+      }
+    }
+    &.o_tele_studio_checkbox_inactive > input + label:after {
+      background-image: url("/tele_studio/static/src/img/ui/checkbox_indeterminate.svg");
+    }
+  }
+}
+
+@mixin o-tele-studio-select($top: 29px, $bottom: 37px) {
+  position: relative;
+
+  select,
+  select:active,
+  select:focus {
+    color: $o-tele-studio-text-inactive;
+    background-image: none;
+    box-shadow: none;
+    border-color: $o-tele-studio-bg-dark;
+  }
+
+  &:after,
+  &:before {
+    color: $o-tele-studio-text-inactive;
+    font-family: "FontAwesome";
+    font-size: 8px;
+    content: "\f077";
+    @include o-position-absolute($top, 8px);
+  }
+  &:after {
+    content: "\f078";
+    @include o-position-absolute($bottom, 8px);
+  }
+  &:hover {
+    &:after,
+    &:before {
+      color: $o-tele-studio-text-light;
+    }
+  }
+}
+
+@mixin o-tele-studio-btn-variation($normal-color, $active-color) {
+  border-color: $normal-color;
+  background-color: $normal-color;
+  color: $o-tele-studio-bg-light;
+
+  &:hover,
+  &:active,
+  &:focus,
+  &.active {
+    background-color: $active-color;
+    border-color: $active-color;
+    color: white;
+  }
+}
+
+@mixin o-tele-studio-btn {
+  font-size: 0.8em;
+  color: $o-tele-studio-bg-light;
+  text-transform: uppercase;
+
+  &.btn-secondary {
+    @include o-tele-studio-btn-variation($o-tele-studio-bg-dark, $o-tele-studio-bg-darker);
+  }
+  &.btn-primary {
+    @include o-tele-studio-btn-variation($o-brand-primary, darken($o-brand-primary, 5%));
+  }
+  &.btn-danger {
+    @include o-tele-studio-btn-variation(
+      $o-tele-studio-color-danger,
+      darken($o-tele-studio-color-danger, 5%)
+    );
+  }
+  &.btn-warning {
+    @include o-tele-studio-btn-variation(
+      $o-tele-studio-color-warning,
+      darken($o-tele-studio-color-warning, 5%)
+    );
+  }
+  &.btn-dark {
+    @include o-tele-studio-btn-variation(
+      $o-tele-studio-bg-medium,
+      darken($o-tele-studio-bg-medium, 5%)
+    );
+  }
+}
+
+@mixin o-tele-studio-sidebar-btn-link($color: $o-enterprise-primary-color) {
+  color: $color;
+  &:hover {
+    color: darken($color, 5%);
+  }
+}
+
+@mixin o-tele-studio-thumbnails-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $o-tele-studio-bg-light;
+}
+@mixin o-tele-studio-thumbnails {
+  padding-top: 20px;
+  overflow: auto;
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+@mixin o-tele-studio-thumbnail {
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  float: left;
+  position: relative;
+  height: 140px;
+  width: $o-tele-studio-view-type-width;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-shadow: $o-tele-studio-shadow-base;
+
+  &:hover {
+    box-shadow: $o-tele-studio-shadow-active;
+  }
+
+  .o_tele_studio_thumbnail {
+    height: 115px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+
+    img {
+      width: 60px;
+      margin: auto;
+      align-self: center;
+    }
+  }
+  .o_tele_studio_name {
+    @include o-position-absolute($bottom: 10px, $left: 10px);
+    font-weight: 500;
+    font-size: 12px;
+    color: $o-tele-studio-text-dark;
+    text-transform: capitalize;
+  }
+}
+
+@mixin o-tele-studio-app-creator-background {
+  background-image: linear-gradient(90deg, #565d78, #65545c);
+}

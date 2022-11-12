@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="tele_backend_theme.bookmark_bar">
+        <div class="right-sidebar-inner h-100">
+            <div class="tele-zoom-view">
+                <button class="fa fa-search-plus btn tele-btn-zoom" data-toggle="collapse"
+                        data-target="#zoomPanel"></button>
+                <div id="zoomPanel" class="collapse zoom-panel">
+                    <div class="d-flex align-items-center">
+                        <div class="tele-zoom-per pl-2">100%</div>
+                        <div class="tele-zoom-inn-dec d-flex align-items-center mx-2">
+                            <button class="btn btn-small tele-btn-dec">-</button>
+                            <button class="btn btn-small tele-btn-inn">+</button>
+                        </div>
+                        <button class="fa fa fa-repeat tele-btn-reset btn btn-secondary"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tele-bookmark-auto">
+                <div class="tele-bookmark-body h-100">
+                    <div class="d-flex flex-column h-100">
+                        <div class="tele-bookmark-panel py-2"></div>
+                        <div class="text-center ks_add_bookmark_dropdown py-3 position-relative dropdown">
+                            <button class="btn btn-secondary-outline tele-add-bookmark" title="Add Bookmark"
+                                    data-toggle="dropdown">+</button>
+                            <div id="addBookmarkDropdown"
+                                 class="dropdown-menu dropdown-menu-right mr-3 tele-add-bookmark-dropdown">
+                            <div class="tele-add-bookmark-header py-2 px-3">
+                                <h4>Add Bookmark</h4>
+                            </div>
+                                <div class="tele-add-bookmark-body pt-2 px-3 pb-3">
+                                <div class="form-group m-0">
+<!--                                  <label for="bookmark_name">Name:</label>-->
+                                    <input type="text" class="form-control" id="bookmark_name" placeholder="Name"/>
+                                </div>
+                                    <div id="ks_bookmark_alert" class="alert alert-danger" role="alert"
+                                         style="display:none">Can't be empty</div>
+                            </div>
+                                <div class="tele-add-bookmark-footer py-2 px-3">
+                                    <button type="button" class="btn btn-primary tele-save-bookmark">Done</button>
+                                    <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-target="#addBookmarkDropdown">Cancel</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div class="bookmartele-toggle">
+                <button type="button" aria-label="Next" title="Bookmark Setting"
+                        class="fa fa-chevron-right tele-bookmartele-menu-toggle btn"/>
+            </div>
+        </div>
+    </t>
+</templates>
